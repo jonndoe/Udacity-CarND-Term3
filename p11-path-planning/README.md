@@ -306,6 +306,28 @@ A really helpful resource for doing this project and creating smooth trajectorie
     git checkout e94b6e1
     ```
 
+ bobo7727 commented on Apr 14
+Install uWebSockets
+See Detail: https://github.com/udacity/CarND-Path-Planning-Project/blob/master/install-ubuntu.sh
+
+sudo apt-get install libuv1-dev libssl-dev libz-dev
+git clone https://github.com/uWebSockets/uWebSockets
+cd uWebSockets
+git checkout e94b6e1 #Important,CMakeList.txt in this commit.
+mkdir build
+cd build
+cmake ..
+make
+sudo make install
+sudo ln -s /usr/lib64/libuWS.so /usr/lib/libuWS.so #Important, link libuWS.so
+sudo rm -r uWebSockets
+
+
+
+
+
+
+
 ## Editor Settings
 
 We've purposefully kept editor configuration files out of this repo in order to
